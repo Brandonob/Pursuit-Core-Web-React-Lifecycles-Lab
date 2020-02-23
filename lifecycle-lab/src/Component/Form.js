@@ -10,8 +10,8 @@ class Form extends Component{
        this.setState({
            list: e.target.children[0].value
         })
-        
     }
+    
     
     
     
