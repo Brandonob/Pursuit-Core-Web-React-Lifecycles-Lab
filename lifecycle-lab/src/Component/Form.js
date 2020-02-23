@@ -6,13 +6,13 @@ class Form extends Component{
     }
 
     handleListInput = (e)=>{
+        e.preventDefault()
        this.setState({
-           list: e.target.value
+           list: e.target.children[0].value
         })
-        console.log({
-            list:e.target.value
-        })
+        
     }
+    
     
     
     render(){
@@ -20,9 +20,7 @@ class Form extends Component{
         return(
             <div className="toDo">
             <form className = "form" onSubmit = {this.handleListInput}>
-
             <input type="text" placeholder="Enter a todo"/>
-
 
 
 
