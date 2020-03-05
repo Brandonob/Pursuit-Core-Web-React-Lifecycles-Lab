@@ -4,13 +4,20 @@ import React from 'react';
 // import TodoList from "./Component/TodoList"
 import Form from "./Component/Form"
 
-function App() {
-  return (
-    <div className="App">
-      {/* <TodoList/> */}
-      <Form/>
-    </div>
-  );
+class App extends React.Component {
+  state = {
+    list: []
+  }
+  render() {
+    return (
+      <div className="App">
+        {/* <TodoList/> */}
+        <Form />
+  
+      </div>
+    );
+
+  }
 }
 
 export default App;
